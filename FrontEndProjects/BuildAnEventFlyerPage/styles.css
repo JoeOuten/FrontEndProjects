@@ -1,0 +1,14 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto 0 auto;
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+}
+hr,
+section {
+  width: 90%; /* Relative to parent width */
+  max-width: 1200px; /* Optional: prevents over-stretching on large screens */
+  margin-left: auto;
+  margin-right: auto;
+}

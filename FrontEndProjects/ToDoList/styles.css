@@ -1,0 +1,54 @@
+.todo-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* Base link style (removes underline and sets default color) */
+a {
+  text-decoration: none;
+  color: #2c7be5; /* Primary blue */
+  transition: color 0.2s ease; /* Smooth color transitions */
+}
+
+/* Visited state */
+a:visited {
+  color: #9b51e0; /* Purple */
+}
+
+/* Hover state */
+a:hover {
+  color: purple; /* Darker blue */
+}
+
+/* Focus state (keyboard accessibility) */
+a:focus {
+  outline: 2px solid #27b327; /* Green outline */
+  outline-offset: 2px; /* Space between text and outline */
+}
+
+/* Active state (while being clicked) */
+a:active {
+  color: #e63757; /* Red */
+}
+.sub-item-link {
+  text-decoration: none;
+  color: #2c7be5;
+  transition: color 0.2s ease;
+}
+
+.sub-item-link:visited {
+  color: #9b51e0;
+}
+
+.sub-item-link:hover {
+  color: #1a68d1;
+}
+
+.sub-item-link:focus {
+  outline: 2px solid #27b327;
+  outline-offset: 2px;
+}
+
+.sub-item-link:active {
+  color: #e63757;
+}

@@ -1,0 +1,125 @@
+/* Base Styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input, Select, and Textarea Styles */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* First Input Field Special Styling */
+input:nth-child(1) {
+  border-radius: 20px;
+  padding: 12px 15px;
+}
+
+/* Focus State */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Validation States */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+/* Radio Group Styling */
+.radio-group {
+  border: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.radio-group legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.radio-option input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+/* Radio Button Checked State */
+.radio-group input[type="radio"]:checked {
+  border-color: #4a90e2;
+  background-color: #e1edff;
+  box-shadow: 0 0 0 2px #4a90e2;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+/* Button Styling */
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+/* Textarea Specific Styling */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Select Dropdown Styling */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}

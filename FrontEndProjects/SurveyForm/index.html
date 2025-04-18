@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Title with required id -->
+    <h1 id="title">Survey Form</h1>
+
+    <!-- Short explanation with required id -->
+    <p id="description">
+      Please fill out this survey form to help us improve our services.
+    </p>
+
+    <!-- Form with required id -->
+    <form id="survey-form">
+      <!-- Name field with label -->
+      <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <!-- Email field with label -->
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <!-- Number field with label -->
+      <div class="form-group">
+        <label id="number-label" for="number">Age (between 18-120):</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="Enter your age"
+          min="18"
+          max="120"
+        />
+      </div>
+
+      <!-- Dropdown select element -->
+      <div class="form-group">
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select id="dropdown" name="role">
+          <option value="" disabled selected>Select your current role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="part-time-job">Part Time Job</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Radio buttons group -->
+      <div class="form-group">
+        <p>Would you recommend our service to a friend?</p>
+        <div class="radio-group">
+          <input
+            type="radio"
+            id="definitely"
+            name="recommendation"
+            value="definitely"
+          />
+          <label for="definitely">Definitely</label>
+        </div>
+        <div class="radio-group">
+          <input type="radio" id="maybe" name="recommendation" value="maybe" />
+          <label for="maybe">Maybe</label>
+        </div>
+        <div class="radio-group">
+          <input
+            type="radio"
+            id="not-sure"
+            name="recommendation"
+            value="not-sure"
+          />
+          <label for="not-sure">Not sure</label>
+        </div>
+      </div>
+
+      <!-- Checkbox group -->
+      <div class="form-group">
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            id="front-end"
+            name="improvements"
+            value="front-end"
+          />
+          <label for="front-end">Front-end Projects</label>
+        </div>
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            id="back-end"
+            name="improvements"
+            value="back-end"
+          />
+          <label for="back-end">Back-end Projects</label>
+        </div>
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            id="data-visualization"
+            name="improvements"
+            value="data-visualization"
+          />
+          <label for="data-visualization">Data Visualization</label>
+        </div>
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            id="challenges"
+            name="improvements"
+            value="challenges"
+          />
+          <label for="challenges">Challenges</label>
+        </div>
+      </div>
+
+      <!-- Textarea for comments -->
+      <div class="form-group">
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          placeholder="Enter your comments here..."
+        ></textarea>
+      </div>
+
+      <!-- Submit button -->
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
